@@ -1,0 +1,6 @@
+Trabalho realizado com apoio das aulas da Alura e com Google Gemini a ferramenta de IA utilizada para auxiliar no desenvolvimento do mesmo.
+
+Este projeto tem como objetivo explorar as estrelas mais brilhantes do universo observável, 
+permitindo que os usuários realizem buscas específicas para obter informações detalhadas sobre as estrelas de seu interesse.
+Desenvolvido com HTML, CSS e JavaScript, o sistema oferece uma interface intuitiva e responsiva para facilitar a navegação e a interação,
+tornando a descoberta de dados astronômicos mais acessível e interessante para todos os entusiastas do espaço.
