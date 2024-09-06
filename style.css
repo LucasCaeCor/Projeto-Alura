@@ -1,0 +1,255 @@
+/* Configurações Globais */
+html, body {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://cdn.pixabay.com/photo/2019/01/02/02/37/background-3907905_1280.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header e Footer */
+header, footer {
+  padding: 20px 0;
+  color: rgb(49, 32, 32);
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: #1e242b;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  font-family: sans-serif;
+  
+}
+
+header {
+  background-image: linear-gradient(to right, #1e2328, #1c0540);
+  opacity: 0.8;
+  font-family: sans-serif;
+}
+
+/* Títulos e Texto */
+h1.display-4 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 25px;
+}
+
+
+
+/* seção estrela */
+.cabeca {
+  background: url('https://wallpapers.com/images/hd/1920x1080-hd-space-o7zwlkrf4mfp5tb8.jpg') no-repeat center center/cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px; /* Adiciona um espaçamento interno para o conteúdo */
+  font-family: sans-serif;
+}
+
+
+.cabeca .display {
+  font-size: 2rem;
+  display: flex;
+  padding: 20px;
+}
+
+.cabeca .lead {
+  font-size: 1.25rem; /* Ajusta o tamanho da fonte para um valor adequado */
+  text-align: justify; /* Alinha o texto em ambos os lados, típico de parágrafos de livros */
+  font-family: 'Georgia', Arial, Helvetica, sans-serif; /* Usa uma fonte serifada para um estilo mais clássico */
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhor legibilidade */
+  padding: 20px; /* Mantém o espaçamento ao redor do parágrafo */
+  margin: 0 auto; /* Centraliza o parágrafo dentro do container */
+  max-width: 800px; /* Define uma largura máxima para o parágrafo, tornando-o mais legível */
+  text-indent: 1.5em; /* Indenta o início do parágrafo para um estilo de livro tradicional */
+  background-color: rgba(202, 55, 55, 0.026); /* Fundo levemente branco para destacar o texto (opcional) */
+  border-left: 3px solid #ccc; /* Adiciona uma borda à esquerda para um toque de estilo */
+  
+}
+
+/* Formulário de Pesquisa */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 60%;
+  padding: 0.6rem 1rem;
+  border-radius: 20px 0 0 20px;
+  border: 2px solid #713f3f21;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  color: #92821b;
+}
+
+.search-button {
+  padding: 0.6rem 1.5rem;
+  background-color: #f6f6f6;
+  color: #92821b;
+  border-radius: 0 20px 20px 0;
+  border: 2px solid #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #92821b;
+  color: #ffffff;
+}
+
+/* Estilos para o título da seção */
+.results-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ddd8d8;
+  font-family: sans-serif;
+}
+
+/* Estilos para o container de resultados */
+.resultados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center; /* Centraliza o card horizontalmente */
+  
+}
+
+/* Estilo para a mensagem de nenhum resultado encontrado */
+#no-results-container {
+  margin-top: 2rem;
+}
+
+.no-results-icon {
+  width: 80px; /* Ajuste o tamanho conforme necessário */
+  margin-bottom: 1rem;
+}
+
+.no-results-message {
+  font-size: 1.25rem;
+  color: #888;
+  font-weight: bold;
+}
+
+/* Estilo dos cards */
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+
+}
+
+
+/* Efeito hover no card */
+.card:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse sobre ele */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse sobre o card */
+}
+
+/* Estilo da imagem do card */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0; /* Bordas arredondadas na parte superior da imagem */
+}
+
+/* Estilo do corpo do card */
+.card-body {
+  text-align: center;
+  display: flex;
+  margin-bottom: 20%;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente com cor preta no corpo do card */
+  border-radius: 0 0 20px 20px; /* Bordas arredondadas na parte inferior do corpo do card */
+}
+
+/* Estilo do botão no card */
+.btn-primary {
+  margin-top: 10px;
+  border-radius: 20px; /* Bordas arredondadas no botão */
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo transparente com cor negra */
+  color: #fff; /* Cor do texto do botão */
+  border: 1px solid #fff; /* Borda branca */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para o efeito hover */
+}
+
+/* Efeito hover no botão */
+.btn-primary:hover {
+  background-color: #fff; /* Cor de fundo branca ao passar o mouse */
+  color: #000; /* Cor do texto preta ao passar o mouse */
+}
+
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse sobre ele */
+  transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse sobre ele */
+}
+
+
+/* Animação de Fogo */
+.fire-effect {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #ff0, 0 0 60px #ff0, 0 0 70px #f00;
+  animation: fire-text 1.5s infinite alternate, flicker 0.1s infinite, brightness 3s infinite alternate;
+}
+
+@keyframes fire-text {
+  0% { text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #f00, 0 0 40px #f00, 0 0 50px #ff0, 0 0 60px #ff0, 0 0 70px #f00; }
+  50% { text-shadow: 0 0 15px #ff4500, 0 0 30px #ff4500, 0 0 45px #ff0000, 0 0 60px #ff0000, 0 0 75px #ff4500, 0 0 90px #ff4500, 0 0 105px #ff0000; }
+  100% { text-shadow: 0 0 20px #ff6347, 0 0 40px #ff6347, 0 0 60px #ff4500, 0 0 80px #ff4500, 0 0 100px #ff6347, 0 0 120px #ff6347, 0 0 140px #ff4500; }
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.8; }
+}
+
+@keyframes brightness {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+  100% { filter: brightness(1); }
+}
+/* Ajustes Adicionais */
+section {
+  padding: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .cabeca h2 { font-size: 2rem; }
+  .cabeca p { font-size: 1rem; }
+  .search-form { flex-direction: column; }
+  .search-input { max-width: 100%; margin-bottom: 10px; }
+  .search-button { padding: 0.6rem 1.5rem; border-radius: 0 20px 20px 0; margin-bottom: 10px; }
+}
